@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+node_modules/
+.vscode
+dataMock/
+lib/
+package-lock.json
+bin/create-api.js
+model

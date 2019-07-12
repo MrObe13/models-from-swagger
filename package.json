@@ -1,0 +1,105 @@
+{
+  "name": "models-from-swagger",
+  "version": "1.0.5",
+  "description": "Package to create models js/ts from JSON Swagger File",
+  "repository": "github:MrObe13/models-from-swagger.git",
+  "author": "MrObe13",
+  "license": "ISC",
+  "keywords": [
+    "swagger",
+    "model",
+    "create model js",
+    "class from swagger"
+  ],
+  "main": "src/elabMain.js",
+  "jsnext:main": "src/elabMain.js",
+  "scripts": {
+    "test": "cd test && jest --watch",
+    "watch": "grunt watch",
+    "build": "grunt"
+  },
+  "dependencies": {
+    "@babel/polyfill": "7.4.4",
+    "commander": "2.20.0",
+    "handlebars": "^4.1.2",
+    "lodash": "^4.17.13",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.0",
+    "@babel/preset-env": "7.5.0",
+    "acorn": "^6.2.0",
+    "babel-cli": "6.26.0",
+    "babel-eslint": "10.0.2",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb-base": "13.2.0",
+    "eslint-plugin-import": "2.18.0",
+    "grunt": "1.0.3",
+    "grunt-babel": "8.0.0",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-watch": "1.0.0",
+    "jest": "^19.0.2"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb-base",
+    "env": {
+      "browser": true,
+      "node": true,
+      "jest": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "rules": {
+      "arrow-parens": [
+        "error",
+        "always"
+      ],
+      "arrow-body-style": [
+        2,
+        "as-needed"
+      ],
+      "class-methods-use-this": 0,
+      "comma-dangle": [
+        2,
+        "always-multiline"
+      ],
+      "import/imports-first": 0,
+      "import/newline-after-import": 0,
+      "import/no-dynamic-require": 0,
+      "import/no-extraneous-dependencies": 0,
+      "import/no-named-as-default": 0,
+      "import/no-unresolved": 2,
+      "import/no-webpack-loader-syntax": 0,
+      "import/prefer-default-export": 0,
+      "indent": [
+        2,
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "max-len": 0,
+      "newline-per-chained-call": 0,
+      "no-confusing-arrow": 0,
+      "no-console": "off",
+      "no-underscore-dangle": 0,
+      "no-use-before-define": 0,
+      "prefer-template": 2,
+      "require-yield": 0
+    },
+    "settings": {
+      "import/resolver": {
+        "webpack": {
+          "config": "./internals/webpack/webpack.prod.babel.js"
+        }
+      }
+    }
+  },
+  "bin": {
+    "create-models": "./bin/create-models.js"
+  }
+}

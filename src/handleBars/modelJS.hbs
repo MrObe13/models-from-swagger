@@ -1,0 +1,11 @@
+{{#each import}}
+import {{this}} from '../{{this}}';
+{{/each}}
+
+export default class Base{{getKey}} {
+  static attrTypes = {
+    {{#each properties}}
+       {{@key}}: {{{stringfyObj this}}},
+    {{/each}}
+  };
+}
