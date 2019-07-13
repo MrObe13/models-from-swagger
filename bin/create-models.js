@@ -12,7 +12,7 @@ const processFunc = require('../lib/processFunc');
 const elabMain = require('../lib/elabMain');
 
 commander
-  .version('1.0.5')
+  .version('1.0.6')
   .option('-i, --inputPath <path>', 'Add input path from where the file will be read', getInputPath, [])
   .option('-u, --inputUrl <url>', 'Add input url', getInputUrl, [])
   .option('-o, --outputPath <path>', 'Add output path where write final js file')
