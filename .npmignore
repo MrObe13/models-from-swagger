@@ -1,0 +1,8 @@
+.idea/
+node_modules/
+.vscode
+dataMock/
+src/
+package-lock.json
+bin/create-api.js
+model
